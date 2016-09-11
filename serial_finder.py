@@ -1,5 +1,7 @@
 #!/usr/bin/python27
 #coding: utf-8
+#Coded by asa
+#Use proxy transparent to cheat the serial limit
 
 import os
 import re
@@ -72,7 +74,7 @@ if __name__ == '__main__':
 	if not "Sorry" in response:
 
 		try:
-			request = requests.get(url+"/d.php?n="+code, proxies={ 'http':'47.88.189.216:3128' }, timeout=5)
+			request = requests.get(url+"/d.php?n="+code, proxies={}, timeout=5)
 			source = html.fromstring(request.content)
 			getSerial = source.xpath("//textarea/text()")
 			print ("\n------------------------------------------")
