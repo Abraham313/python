@@ -12,7 +12,7 @@ except: os.system('pip install lxml==3.4.2')
 try: import requests
 except: os.system('pip install requests')
 
-from requests import ConnectionError
+from requests import ConnectionError, ReadTimeout
 
 # DEFINIÇÕES - FUNÇÕES
 def href_replaced(href):
