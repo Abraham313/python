@@ -3,6 +3,8 @@
 #Coded by asa
 #Use proxy transparent to cheat the serial limit
 
+__version__ = '1.0'
+
 import os
 import re
 import time
@@ -14,7 +16,7 @@ except: os.system('pip install lxml==3.4.2')
 try: import requests
 except: os.system('pip install requests')
 
-from requests import ConnectionError, ReadTimeout
+from requests import ConnectionError
 
 # DEFINIÇÕES - FUNÇÕES
 def href_replaced(href):
@@ -82,9 +84,6 @@ if __name__ == '__main__':
 			print ("------------------------------------------")
 
 		except ConnectionError:
-			print("[-] Falha na conexao! Tente novamente.")
-
-		except ReadTimeout:
 			print("[-] Falha na conexao! Tente novamente.")
 
 	else:
