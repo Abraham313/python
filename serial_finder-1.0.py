@@ -1,4 +1,4 @@
-#!/usr/bin/python27
+#!/usr/bin/python
 #coding: utf-8
 #Coded by asa
 #Use proxy transparent to cheat the serial limit
