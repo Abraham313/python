@@ -7,7 +7,6 @@ from bs4 import BeautifulSoup
 import requests
 import re
 import sys
-import platform
 import os
 
 def banner():
@@ -22,11 +21,7 @@ def banner():
 
 # Limpeza de tela em diferentes sistemas
 def clear():
-	system = (platform.system()).lower()
-	if "linux" in system:
-		os.system("clear")
-	elif "win" in system:
-		os.system("cls")
+	os.system("clear || cls")
 
 # Modo de uso
 def usage():
