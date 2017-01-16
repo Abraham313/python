@@ -9,7 +9,6 @@ import re
 import urllib
 import argparse
 from random import randint
-import platform
 
 def banner():
 	print '''
@@ -23,11 +22,7 @@ def banner():
 
 # Limpeza de tela em diferentes sistemas
 def clear():
-	system = (platform.system()).lower()
-	if "linux" in system:
-		os.system("clear")
-	elif "win" in system:
-		os.system("cls")
+	os.system("clear || cls")
 
 def main():
 	clear()
