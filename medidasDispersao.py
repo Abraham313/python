@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 #coding: utf-8
+#coded by n0dz
 
 '''
 	biblioteca sem o uso de imports para iniciantes em programação a fim de estudos de código
