@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 #coding: utf-8
-#coded by n0dz
 
 '''
 	biblioteca sem o uso de imports para iniciantes em programação a fim de estudos de código
@@ -18,6 +17,9 @@ class medidasDispersao():
 		except TypeError:
 			print("TypeError: Insira uma lista como argumento")
 			exit()
+
+	def moda(self):
+		return max(set(self.values), key=self.values.count)
 	
 	def desvio(self):
 		mediaAtm = self.media()
