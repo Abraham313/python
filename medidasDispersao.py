@@ -33,6 +33,5 @@ class medidasDispersao():
 		return float("{:.4}".format(divisaoValues))
 
 	def desvioPadrao(self):
-		varianciaDv = self.variancia()
-		raizQuadrada = ( varianciaDv ** (1/2.0) )
+		raizQuadrada = ( self.variancia() ** (1/2.0) )
 		return float("{:.4}".format(raizQuadrada))
